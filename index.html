@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>CodePen - Trello Clone</title>
   <link rel="stylesheet" href="./style.css">
-
+  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -13,7 +13,7 @@
     <div class="title removable editable">Backlog</div>
     <div class="content">
       <div class="card removable editable">order#1</div>
-      <div class="card removable editable" >"order#2</div>
+      <div class="card removable editable" >order#2</div>
       <div class="card removable editable" >order#3</div>
       <div class="card removable editable">order#4</div>
       <div class="card removable editable" >order#5</div>
@@ -63,6 +63,36 @@
   </div>
   <div class="list">
     <div class="title removable editable">In Progress</div>
+  <style>
+      #div1 {
+        font-size:30px;
+        position: absolute;
+        
+         left: 50%;
+         
+         transform: translate(-50%,-50%);
+      }
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <div id="div1" class="fa"></div>
+      
+      <script>
+      function hourglass() {
+        var a;
+        a = document.getElementById("div1");
+        a.innerHTML = "&#xf251;";
+        setTimeout(function () {
+            a.innerHTML = "&#xf252;";
+          }, 1000);
+        setTimeout(function () {
+            a.innerHTML = "&#xf253;";
+          }, 2000);
+      }
+      hourglass();
+      setInterval(hourglass, 3000);
+      </script>
+      <br>
     <div class="content"></div>
 
       <div class="card removable editable">order#4<p>3 Small Cappuccino</p></div>
@@ -85,7 +115,6 @@
     <div class="card removable editable">order#18<p>4 Small Iced Coffee</p><p>Low on ice</p></div>
     <div class="card removable editable">order#20<p>3 Medium Flat White</p><p>Topping up Milk</p></div>
   <div class="add-card editable">Add another card</div>
-</div>
 </div>
 <div class="list">
   <div class="title removable editable">Done</div>
@@ -111,11 +140,12 @@
     <div class="card removable editable">order#19<p>1 Medium Frappe</p></div>
     <div class="card removable editable">order#20<p>3 Medium Flat White</p></div>
   </div>
+  </div>
 <div class="add-list">
   <div class="title editable">Add another list</div>
-</div>
+
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script><script  src="./script.js"></script>
-
+</div>
 </body>
 </html>

@@ -1,10 +1,11 @@
 body {
-  font-family: sans-serif;
-  color: #172b4d;
-  background-color: #0279bf;
+  font-family: 'Zen Antique Soft';font-size: 22px;
+  color: #000000;
+  background-color: #ff3434;
   display: flex;
   align-items: start;
 }
+
 
 div {
   border-radius: 3px;
@@ -30,7 +31,7 @@ div {
 }
 
 .editing {
-  background: white;
+  background: rgb(245, 2, 2);
   color: #172b4d !important;
   box-shadow:inset 0px 0px 0px 2px #0279bf;
 }
@@ -40,8 +41,8 @@ div {
 }
 
 .card {
-  background: white;
-  border-bottom: 1px solid #aaa;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(254, 254, 254);
 }
 
 .list {
@@ -49,7 +50,7 @@ div {
   min-width: 280px;
   margin: 10px 5px;
   position: relative;
-  background: #dfe1e6;
+  background: #4177fe;
 }
 
 
